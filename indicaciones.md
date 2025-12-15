@@ -29,3 +29,28 @@ console.log(good3)
 // []
 ```
 
+## Día 2 — Lista de producción de juguetes
+- Descripción: La fábrica recibe líneas con `toy` y `quantity`. Devuelve un array de strings con cada juguete repetido tantas veces como indique `quantity`, en el mismo orden, ignorando cantidades no válidas (menores o iguales a 0, o que no sean número).
+- Solución en: `dia-2.ts` (función `manufactureGifts` en `dia-2.ts:1`)
+- Ejemplos:
+```ts
+const production1 = [
+  { toy: 'car', quantity: 3 },
+  { toy: 'doll', quantity: 1 },
+  { toy: 'ball', quantity: 2 }
+]
+const result1 = manufactureGifts(production1)
+console.log(result1)
+
+const production2 = [
+  { toy: 'train', quantity: 0 },
+  { toy: 'bear', quantity: -2 },
+  { toy: 'puzzle', quantity: 1 }
+]
+const result2 = manufactureGifts(production2)
+console.log(result2)
+
+const production3: Array<{ toy: string, quantity: number }> = []
+const result3 = manufactureGifts(production3)
+console.log(result3)
+```
