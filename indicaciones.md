@@ -54,3 +54,42 @@ const production3: Array<{ toy: string, quantity: number }> = []
 const result3 = manufactureGifts(production3)
 console.log(result3)
 ```
+
+## Día 3 — Dibujar regalo cuadrado
+- Descripción: Dado `size` y `symbol`, dibuja el borde de un regalo cuadrado y deja el interior vacío.
+- Reglas:
+  - Debe ser un cuadrado de `size x size`.
+  - Interior vacío (espacios).
+  - Si `size < 2`, devuelve cadena vacía.
+  - El resultado es un único `string` con saltos de línea `\n`.
+- Solución esperada en: `dia-3.ts` (función `drawGift(size: number, symbol: string): string`)
+- Ejemplos:
+```ts
+const g1 = drawGift(4, '*')
+console.log(g1)
+/*
+****
+*  *
+*  *
+****
+*/
+
+const g2 = drawGift(3, '#')
+console.log(g2)
+/*
+###
+# #
+###
+*/
+
+const g3 = drawGift(2, '-')
+console.log(g3)
+/*
+--
+--
+*/
+
+const g4 = drawGift(1, '+')
+console.log(g4)
+// ""
+```
